@@ -1,0 +1,224 @@
+/* ==== Font rule
+font-family: 'Pacifico', cursive; 
+ */
+ * {
+    box-sizing: border-box;
+ }
+ body {
+    font-family: 'Open Sans', sans-serif;
+    margin:0;
+ }
+html {
+    scroll-behavior: smooth;
+}
+ /*==HEADER ==*/
+.header {
+    overflow: hidden;
+    background-color: #fff;
+    padding : 22px 10px;
+    box-shadow:  rgba(93, 255, 134, 1) 10px 10px 10px;
+}
+.header a{
+    line-height: 25px;
+    transition: all 0.3s;
+}
+ /*== HEADER ==*/
+ .header a.logo {
+    float : left;
+    color : #333; 
+    padding :10px;
+font-size: 40px;
+font-weight : bold;
+font-family: 'Pacifico', cursive; 
+
+ }
+ .header a i {
+color :rgb(26, 184, 26);
+ }
+ .header .right {
+    float:right;
+
+ }
+ .header .right a{
+    font-size:18px;
+    padding :14px;
+    color : #333;
+ }
+  .header a:hover {
+    color :rgb(26, 184, 26);
+    text-decoration: none;
+  }
+   .header .right .active {
+    color :rgb(26, 184, 26);
+   }
+   /* SECTION STYLING */
+   section {
+    padding :30px;
+   }
+   /*== HERO ==*/
+   .hero {
+    width:100%;
+    height : 90vh;
+    position: relative;
+    /*==
+   background:url('images/hero-bg.jpg') no-repeat;
+   */
+   }
+
+.hero .content {
+    padding-top: 20%;
+}
+.hero .content h5 {
+    color :rgb(26, 184, 26);
+    font-family: 'Pacifico', cursive; 
+    font-size:22px;
+    padding-bottom: 0;
+    margin:0;
+}
+
+.hero .content h1 {
+    color :#333;
+font-weight:600;
+    font-size:42px;
+    margin-top:0;
+    padding-top: 0;
+}
+
+.hero .content p{
+    color :rgb(145, 145, 145);
+
+}
+.hero img {
+    width : 100%;
+    filter : brightness(120%);
+    filter: contrast(120%);
+    filter:drop-shadow(10px 10px 10px green);
+}
+
+/* BTN STYLE*/
+.btn {
+    background:rgb(26, 184, 26) ;
+    color:white;
+    padding : 10px 25px;
+    border-radius: 50px;
+    transition: all 0.3s;
+}
+.btn:hover {
+    background: white;
+    color:rgb(26, 184, 26) ;
+    border: 1px solid rgb(26, 184, 26) ;
+}
+/* Animate */
+.animate {
+    animation: up 1s ease-in-out infinite alternate-reverse;
+}
+@keyframes up{
+    0% {
+transform: translateY(10px);
+    }
+    100%{
+transform: translateY(-10px);
+    }
+}
+
+/*Section title */
+.title h2 {
+    text-align: center;
+    font-weight: 600;
+    color:#333;
+}
+.title h2 span {
+    color:rgb(26, 184, 26) ;
+    font-family: 'Pacifico', cursive; 
+}
+
+/*Portfolio */
+.portfolio {
+    position: relative;
+}
+.portfolio .portfolio-img {
+  
+    overflow: hidden;
+}
+
+.portfolio .portfolio-img img{
+ transition: ease-in 0.2s;
+}
+
+.portfolio .portfolio-img img:hover{
+transform: scale(1.2);
+}
+
+.portfolio .port-content  {
+    position: absolute;
+    background:  rgba(97, 97, 97, 0.7); 
+    padding: 10px 15px;
+    bottom:20px;
+    left: 45px;
+    right:15px;
+    overflow: hidden;
+    color:white;
+    transition: ease-in 0.2s;
+    opacity: 0;
+}
+.portfolio .port-content h5{
+    font-weight: 600;
+    font-size: 16px;
+}
+.portfolio .port-item{
+    margin-bottom: 20px;
+}
+.portfolio .port-content:hover{
+    opacity: 1;
+}
+
+.portfolio .port-item:hover .port-content{
+    opacity: 1;
+}
+
+.review .php-form {
+    border-top: 2px solid rgb(26, 184, 26);
+    border-bottom: 2px solid rgb(26, 184, 26);
+    width :100%;
+    box-shadow: 0 0 24px 0 rgba(0,0,0,0.3);
+    padding: 30px;
+}
+.review .php-form .form-group{
+    margin-bottom: 20px;
+}
+
+.review .php-form label{
+padding-bottom: 10px;
+}
+
+.review .php-form input{
+width:100%;
+height: 40px;
+
+}
+
+.review .php-form select{
+    width:100%;
+    height: 40px;
+    
+    }
+
+    .review .php-form textarea{
+        width:100%;
+  height: 120px;
+        }
+      
+.review .php-form button {
+    background: rgb(26, 184, 26);
+    color: white;
+    border-radius: 50px;
+    transition: all 0.3s;
+    border:0;
+    padding: 10px 15px;
+}
+
+.review .php-form button:hover{
+    background: white;
+    color: rgb(26, 184, 26);
+    border:1px solid rgb(26, 184, 26);
+}
